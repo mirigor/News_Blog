@@ -8,9 +8,9 @@
 
 В терминале pycharm следует ввести последовательно следующие команды:
 
--python -m venv venv (для создания виртуального окружения)
--venv\Scripts\activate.bat (для активации виртуального окружения)
--pip install -r requirements.txt (для установки нужных модулей)
+- python -m venv venv (для создания виртуального окружения)
+- venv\Scripts\activate.bat (для активации виртуального окружения)
+- pip install -r requirements.txt (для установки нужных модулей)
 -cd test_task
 -python manage.py makemigrations
 -python manage.py migrate
