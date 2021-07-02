@@ -1,0 +1,33 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'news/bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'news/css/style.css' %}">
+    <title> Новости </title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'statistics' %}">Статистика</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-9">
+            {% block content %} CONTENT {% endblock %}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

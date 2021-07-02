@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card mb-3">
+    <div class="card-body">
+        <div class="media">
+            <img src="{{ news.picture.url }}" alt="" height="350">
+            <div class="media-body">
+                <h5 class="card-title">{{ news.title }}</h5>
+                <p class="card-text">{{ news.text|linebreaks }}</p>
+                {% if news.tags.exists %}
+                <span>
+                    Тэги:
+                    {% for tag in news.tags.all %}
+                    <a href="{{ tag.get_absolute_url }}">{{ tag.title }}</a>
+                    {% endfor %}
+                </span>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+

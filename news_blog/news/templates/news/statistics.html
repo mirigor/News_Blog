@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for item in news %}
+<div class="card mb-3">
+    <div class="card-body">
+        <div class="media">
+            <img src="{{ item.picture.url }}" alt="" height="200">
+            <div class="media-body">
+                <h4 class="card-title">{{ item.title }}</h4>
+                <br>
+                <p class="card-text">Просмотров: {{ item.views }}</p>
+                <a href="{{ item.get_absolute_url }}" class="btn btn-primary">Read more...</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endfor %}
+{% endblock %}
