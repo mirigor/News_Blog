@@ -10,7 +10,7 @@
 
 - python -m venv venv (для создания виртуального окружения)
 - venv\Scripts\activate.bat (для активации виртуального окружения)
-- cd test_task
+- cd news_blog
 - pip install -r requirements.txt (для установки нужных модулей)
 - python manage.py makemigrations
 - python manage.py migrate
