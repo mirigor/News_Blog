@@ -4,7 +4,7 @@
 
 В Postgresql следует создать базу данных под названием 'news_for_test'
 
-В файле settings.py, в DATABASES следует указать своё имя и пароль от postgresql
+В файле news_blog/settings.py, в DATABASES следует указать своё имя и пароль от postgresql
 
 В терминале pycharm следует ввести последовательно следующие команды:
 
