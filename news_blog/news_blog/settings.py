@@ -77,8 +77,8 @@ DATABASES = {
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'news_for_test',
-        'USER': 'postgres',
-        'PASSWORD': '12021997',
+        'USER': 'postgres',  # напишите своё имя, если отличается
+        'PASSWORD': '',  # напишите свой пароль
         'HOST': 'localhost',
         'PORT': '5432',
     }
