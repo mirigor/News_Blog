@@ -8,12 +8,12 @@
 
 В терминале pycharm следует ввести последовательно следующие команды:
 
-python -m venv venv (для создания виртуального окружения)
-venv\Scripts\activate.bat (для активации виртуального окружения)
-pip install -r requirements.txt (для установки нужных модулей)
-cd test_task
-python manage.py makemigrations
-python manage.py migrate
-python manage.py collectstatic
-python manage.py createsuperuser (далее ввести логин и пароль, для дальнейшего входа в админку)
-python manage.py runserver
+-python -m venv venv (для создания виртуального окружения)
+-venv\Scripts\activate.bat (для активации виртуального окружения)
+-pip install -r requirements.txt (для установки нужных модулей)
+-cd test_task
+-python manage.py makemigrations
+-python manage.py migrate
+-python manage.py collectstatic
+-python manage.py createsuperuser (далее ввести логин и пароль, для дальнейшего входа в админку)
+-python manage.py runserver
