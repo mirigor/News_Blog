@@ -17,3 +17,5 @@
 - python manage.py collectstatic
 - python manage.py createsuperuser (далее ввести логин и пароль, для дальнейшего входа в админку)
 - python manage.py runserver
+
+На этом установка закончена, далее можно перейти в админку (http://127.0.0.1:8000/admin) по логину и паролю, добавить сначала тэги, а затем уже новости.
